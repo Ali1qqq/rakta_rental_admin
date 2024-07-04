@@ -543,7 +543,7 @@ class BusesScreen extends StatelessWidget {
         )),
         DataCell(ElevatedButton(
           style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Colors.blue),
+            foregroundColor: WidgetStatePropertyAll(Colors.blue),
           ),
           onPressed: () {
             Get.to(() => BusDriverScreen(record: record));

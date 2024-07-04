@@ -1,14 +1,11 @@
 import 'dart:math';
 
-import 'package:rakta_admin/models/RecentFile.dart' hide demoRecentFiles;
 import 'package:rakta_admin/responsive.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../constants.dart';
 import 'package:rakta_admin/controller/home_controller.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:rating_summary/rating_summary.dart';
 
 class ProviderUserDetailsScreen extends StatelessWidget {
   final ({

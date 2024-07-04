@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:rakta_admin/screens/maps/polyline_services.dart';
 import 'package:rakta_admin/screens/maps/services.dart';

@@ -1,7 +1,6 @@
 import 'package:rakta_admin/models/RecentFile.dart' hide demoRecentFiles;
 import 'package:rakta_admin/responsive.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../constants.dart';
@@ -544,7 +543,7 @@ class FerryScreen extends StatelessWidget {
         )),
         DataCell(ElevatedButton(
           style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Colors.blue),
+            foregroundColor: WidgetStatePropertyAll(Colors.blue),
           ),
           onPressed: () {
             Get.to(() => FerryDriverScreen(record: record));

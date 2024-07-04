@@ -1,6 +1,4 @@
-import 'dart:math';
 
-import 'package:rakta_admin/models/RecentFile.dart' hide demoRecentFiles;
 import 'package:rakta_admin/responsive.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -320,7 +318,7 @@ class ProviderUsersScreen extends StatelessWidget {
           children: [
             IconButton(
               style: ButtonStyle(
-                foregroundColor: MaterialStatePropertyAll(primaryColor),
+                foregroundColor: WidgetStatePropertyAll(primaryColor),
               ),
               onPressed: () {
                 Get.to(()=>ProviderUserDetailsScreen(record:record));
@@ -329,7 +327,7 @@ class ProviderUsersScreen extends StatelessWidget {
             ),
             IconButton(
               style: ButtonStyle(
-                foregroundColor: MaterialStatePropertyAll(primaryColor),
+                foregroundColor: WidgetStatePropertyAll(primaryColor),
               ),
               onPressed: () {
                 Get.to(()=>ProviderUserDetailsScreen(record:record));
@@ -338,7 +336,7 @@ class ProviderUsersScreen extends StatelessWidget {
             ),
             IconButton(
               style: ButtonStyle(
-                foregroundColor: MaterialStatePropertyAll(primaryColor),
+                foregroundColor: WidgetStatePropertyAll(primaryColor),
               ),
               onPressed: () {
                 Get.to(()=>ProviderUserDetailsScreen(record:record));

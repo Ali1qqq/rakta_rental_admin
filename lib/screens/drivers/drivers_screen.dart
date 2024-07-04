@@ -398,7 +398,7 @@ class DriverScreen extends StatelessWidget {
         DataCell(Text(record.sallery)),
         DataCell(ElevatedButton(
           style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Colors.blue),
+            foregroundColor: WidgetStatePropertyAll(Colors.blue),
           ),
           onPressed: () {
             Get.to(()=>TaxiDriverScreen(record:(driverName: record.driverName,status: "a",a: record.a,b:record.b)));

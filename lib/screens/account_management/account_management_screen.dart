@@ -196,7 +196,7 @@ class _AccountManagementScreenState extends State<AccountManagementScreen> {
         )),
         DataCell(ElevatedButton(
           style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Colors.red),
+            foregroundColor: WidgetStatePropertyAll(Colors.red),
           ),
           onPressed: () {
             setState((){

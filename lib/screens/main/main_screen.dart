@@ -1,17 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:rakta_admin/constants.dart';
 import 'package:rakta_admin/controller/home_controller.dart';
-import 'package:rakta_admin/responsive.dart';
 import 'package:rakta_admin/screens/Activity/Activity_screen.dart';
 import 'package:rakta_admin/screens/account_management/account_management_screen.dart';
 import 'package:rakta_admin/screens/ai/ai_screen.dart';
-import 'package:rakta_admin/screens/buses/buses_screen.dart';
 import 'package:rakta_admin/screens/cars/cars_screen.dart';
 import 'package:rakta_admin/screens/customer_happiness/customer_happiness_screen.dart';
 import 'package:rakta_admin/screens/dashboard/dashboard_screen.dart';
-import 'package:rakta_admin/screens/drivers/drivers_screen.dart';
-import 'package:rakta_admin/screens/ferrys/ferry_screen.dart';
 import 'package:rakta_admin/screens/maps/maps_screen.dart';
 import 'package:rakta_admin/screens/provider/Prpvider_users_screen.dart';
 import 'package:rakta_admin/screens/reports/reports_screen.dart';
@@ -19,12 +14,10 @@ import 'package:rakta_admin/screens/settings/settings_screen.dart';
 import 'package:rakta_admin/screens/users/users_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:split_view/split_view.dart';
 import 'package:tab_container/tab_container.dart';
 
 import '../notification/notification_screen.dart';
-import '../taxi/taxi_screen.dart';
-import 'components/side_menu.dart';
+import '../provider/Provider_view.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -133,7 +126,7 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
                       children: [
                         DashboardScreen(),
                         UsersScreen(),
-                        ProviderUsersScreen(),
+                        ProviderView(),
                         CarsScreen(),
                         ActivityScreen(),
                     /*    TaxiScreen(),
